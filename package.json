@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/gabriel-brito/hotels#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.1.6",
     "autoprefixer": "^8.5.0",
     "autoprefixer-stylus": "^0.14.0",
     "babel": "^6.23.0",
