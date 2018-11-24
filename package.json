@@ -1,7 +1,7 @@
 {
   "name": "hotels",
   "version": "1.0.0",
-  "description": "Development of an hotels list",
+  "description": "A simple and minimalist webpage to a university project",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha __tests__/**.spec.js --require babel-register",
@@ -13,7 +13,7 @@
   },
   "keywords": [
     "tdd",
-    "hotels",
+    "university",
     "api",
     "javascript"
   ],
@@ -62,5 +62,7 @@
     "webpack-stream": "^4.0.3",
     "wrench": "^1.5.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
 }

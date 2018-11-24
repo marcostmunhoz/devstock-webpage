@@ -1,8 +1,7 @@
-import Example from '../_modules/example-module/example-module';
+import Gallery from '../_modules/gallery/gallery';
 
-'use strict';
+('use strict');
 
-(function(){
-  let example = new Example();
-
+(function() {
+	const gallery = new Gallery();
 })();
