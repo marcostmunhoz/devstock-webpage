@@ -5,26 +5,19 @@ import babel from 'gulp-babel';
 import runSequence from 'run-sequence';
 import wrench from 'wrench';
 
-wrench.readdirSyncRecursive('./gulp')
+wrench
+  .readdirSyncRecursive('./gulp')
   .filter(file => {
-    return (/\.(js)$/i).test(file);
+    return /\.(js)$/i.test(file);
   })
-  .map(function (file) {
-    require('./gulp/' + file)
-});
+  .map(function(file) {
+    require('./gulp/' + file);
+  });
 
-gulp.task('build', ()=> {
-  runSequence(
-    'imagemin',
-    'stylus',
-    'scripts'
-  )
+gulp.task('build', () => {
+  runSequence('imagemin', 'stylus', 'scripts');
 });
 
 gulp.task('default', () => {
-  runSequence(
-    'build',
-    'browser-sync',
-    'watch'
-  )
-})
+  runSequence('build', 'browser-sync', 'watch');
+});

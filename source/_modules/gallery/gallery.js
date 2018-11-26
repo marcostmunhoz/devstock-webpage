@@ -1,7 +1,7 @@
-'use strict'
+'use strict';
 
 export default class Gallery {
-	constructor() {
-		console.log('Hello World');
-	}
+  constructor() {
+    console.log('Hello World');
+  }
 }
