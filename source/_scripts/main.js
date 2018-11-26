@@ -5,5 +5,5 @@ import Gallery from '../_modules/gallery/gallery';
 (function() {
   setTimeout(() => {
 	  const gallery = new Gallery(); 
-  }, 1500)
+  }, 1500);
 })();

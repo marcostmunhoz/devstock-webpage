@@ -5,5 +5,5 @@ gulp.task('watch', () => {
   return gulp.watch(
     ['./source/**/**/*.styl', './source/**/**/*.js'],
     ['build']
-  )
+  );
 });
