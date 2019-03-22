@@ -2,7 +2,7 @@
 
 export default class Gallery {
   constructor() {
-    this.init();
+    this.imagesIterator();
   }
 
   imagesIterator() {
@@ -14,13 +14,9 @@ export default class Gallery {
   }
 
   targetBlank(element) {
-    let URL = element.currentSrc;
+    const URL = element.currentSrc;
     element.addEventListener('click', () => {
       window.open(URL, '_blank');
     });
-  }
-
-  init() {
-    this.imagesIterator();
   }
 }
