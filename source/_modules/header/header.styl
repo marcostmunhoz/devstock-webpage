@@ -2,7 +2,7 @@
 
 // Table of contents
 // 1.0 header
-// 1.1 headerTitle  
+// 1.1 headerTitle && 1.2 aboutTitle
 
 // header
 // -----------
@@ -14,7 +14,15 @@ header
   
   // headerTitle
   // -----------
-  .headerTitle
+  .headerTitle,
+  .aboutTitle
     color: $white;
     font-size: 23px;
     font-weight: 700;
+    text-decoration: none;
+    
+    &:visited,
+    &:focus,
+    &:active
+      color: $white;
+      text-decoration: none;
