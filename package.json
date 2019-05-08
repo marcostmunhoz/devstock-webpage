@@ -6,7 +6,9 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha __tests__/**.spec.js --require babel-register",
     "test:watch": "./node_modules/.bin/mocha __tests__/**.spec.js --require babel-register --watch",
-    "clean": "rimraf public"
+    "clean": "rimraf public",
+    "start": "node app",
+    "postinstall": "gulp default"
   },
   "repository": {
     "type": "git",
