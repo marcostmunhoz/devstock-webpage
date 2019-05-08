@@ -19,5 +19,5 @@ gulp.task('build', () => {
 });
 
 gulp.task('default', () => {
-  runSequence('build', 'browser-sync', 'watch');
+  runSequence('build');
 });
